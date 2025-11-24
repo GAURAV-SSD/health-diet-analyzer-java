@@ -1,10 +1,10 @@
 # Contributing
 
-Thanks for considering contributing! Keep changes small and explain the why.
+Thank you for thinking about contributing! Please keep changes small and explain the reasons behind them.
 
-- Report issues with a short description and a sample input if possible.
-- For code changes: one feature or bug per PR, include a short example input/output.
-- Keep tests updated for new behavior.
-- Use human-friendly commit messages, e.g.:
+- Report issues with a brief description and a sample input if you can.
+- For code changes, focus on one feature or bug per pull request and include a short example of input and output.
+- Update tests to reflect new behavior.
+- Use clear commit messages, such as:
   - "Clarify scoring rationale in Analyzer.java"
   - "Improve README description and quick start"
