@@ -1,49 +1,56 @@
-# Statement
+# Health & Diet Analyzer — Java (Humanized)
 
-**Project:** Health & Diet Analyzer for Hostel Students (Java)
+A small console Java app that helps hostel students (or anyone) get a quick sense of their daily diet quality and simple suggestions to improve it. I started this as a course project and kept the code intentionally simple so it's easy to read and extend.
 
-**Problem Statement:** Hostel students need a simple way to check diet quality and find possible deficiencies.
+Why I made this
+- I wanted a local, no-friction tool to experiment with diet scoring rules without relying on external services.
+- Built this during college to help friends in hostels understand nutrient gaps easily.
 
-**Scope:** Single-user console app with optional scaling to multi-user and GUI.
+Quick summary
+- Input: simple CSV or sample JSON data describing meals and food items.
+- Output: daily nutrient totals, a simple score, and plain-language suggestions.
+- Not medical advice — meant for prototyping and learning.
 
-**Student:** GAURAV BHARDWAJ  
-**Reg:** 24BSA10187
+What’s new in this “humanized” version
+- Friendlier README and usage examples.
+- Short explanations of the scoring rationale instead of dry statements.
+- Comments in code focus on why decisions were made, not just what the code does.
+- Small TODOs and realistic limitations listed.
 
-This is a Java console application for the course project "Health & Diet Analyzer for Hostel Students."
+Quick start (Maven)
+1. Requirements: Java 17+ and Maven.
+2. Build:
+   mvn clean package
+3. Run (example):
+   mvn exec:java -Dexec.mainClass=com.healthdiet.Main
+   or
+   java -cp target/classes com.healthdiet.Main
 
-## What is included
-- A simple Java project structure under `src/`
-- Core Java classes for Users, FoodItems, Meals, Nutrition aggregation, and a basic JSON-based datastore
-- Sample data files in `data/`
-- `pom.xml` for reference (no external dependencies)
-- Scripts to compile and run with `javac` and `java`
+Simple run example (what you’ll see)
+- "Welcome — enter today's meals or load sample_data/meals.csv"
+- "Today's score: 68/100 — good job! Try adding more vegetables for fiber."
 
-## How to compile & run (Linux / macOS / Windows with Git Bash)
-1. Open the terminal in the project root.
-2. Compile:
-   ```
-   javac -d out $(find src -name "*.java")
-   ```
-   (On Windows, use PowerShell or change the find command.)
-3. Run:
-   ```
-   java -cp out com.healthdiet.Main
-   ```
-4. The app shows a console menu to add meals and view today's summary.
+Project layout (where to look)
+- src/main/java/com/healthdiet — core code (Main, Analyzer, models)
+- data/ — sample inputs
+- tests/ — unit checks (small set)
 
-## Maven usage (recommended)
-This project is set up as a Maven project. To build and run:
+Design notes and limitations
+- Scoring is intentionally simple and rule-based so you can change it quickly.
+- Edge cases (allergic info, portion-size normalization) are out of scope for now.
+- If you want clinical-grade advice, integrate a nutrition database and consult experts.
 
-1. Ensure Maven and Java 17 or newer are installed.
-2. From the project root:
-   - `mvn clean compile`
-   - `mvn exec:java -Dexec.mainClass=com.healthdiet.Main`
+How to help / Contributing
+- Report issues describing a use case or sample input.
+- PRs welcome — small, focused changes with a note about why the change helps.
+- When adding rules, include example input and expected output.
 
-To run tests:
-   - `mvn test`
+Author / Contact
+- Gaurav Bhardwaj (GAURAV-SSD) — a college project owner. If you want me to keep developing this for a specific use (e.g., vegetarian hostel meal plans), say so and I’ll add a small config and examples.
 
-You can also run `./run.sh` (Unix) or `run.bat` (Windows) to compile and execute.
+Changelog (short)
+- 0.1.0 — initial prototype (CSV input, scoring, console output)
+- 0.1.1 — README and code comments rewritten to be more human, added CONTRIBUTING and CHANGELOG outlines
 
-**Target Users:** Undergraduate students living in hostels, especially vegetarians.
-
-**High-level Features:** Meal logging, nutrient aggregation, deficiency detection, dashboard (console), recommendations.
+License
+- Add your preferred license file (e.g., MIT) in the repo root to clarify reuse.
