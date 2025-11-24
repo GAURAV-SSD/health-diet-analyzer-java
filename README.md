@@ -3,36 +3,33 @@
 **Student:** GAURAV BHARDWAJ  
 **Reg:** 24BSA10187
 
-This is a Java console application skeleton for the course project "Health & Diet Analyzer for Hostel Students".
+This is a Java console application skeleton for the course project "Health & Diet Analyzer for Hostel Students."
 
 ## What is included
 - A simple Maven-like Java project structure under `src/`
-- Core Java classes implementing Users, FoodItems, Meals, Nutrition aggregation, and a simple JSON-based datastore
+- Core Java classes for Users, FoodItems, Meals, Nutrition aggregation, and a basic JSON-based datastore
 - Sample data files in `data/`
 - `pom.xml` for reference (no external dependencies)
 - Scripts to compile and run with `javac` and `java`
 
 ## How to compile & run (Linux / macOS / Windows with Git Bash)
-1. Open terminal in project root.
+1. Open the terminal in the project root.
 2. Compile:
    ```
    javac -d out $(find src -name "*.java")
    ```
-   (On Windows, use PowerShell or adapt the find command.)
+   (On Windows, use PowerShell or change the find command.)
 3. Run:
    ```
    java -cp out com.healthdiet.Main
    ```
-4. The app shows a console menu to add meals and view today's summary.
-
-
-
+4. The app displays a console menu to add meals and view today's summary.
 
 ## Maven usage (recommended)
-This project is configured as a Maven project. To build and run:
+This project is set up as a Maven project. To build and run:
 
-1. Ensure Maven and Java 17+ are installed.
-2. From project root:
+1. Make sure Maven and Java 17 or newer are installed.
+2. From the project root:
    - `mvn clean compile`
    - `mvn exec:java -Dexec.mainClass=com.healthdiet.Main`
 
