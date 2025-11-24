@@ -1,9 +1,9 @@
 # Changelog
 
-## 0.1.1 — Humanized docs & comments
-- README rewritten for clarity and voice.
-- Added CONTRIBUTING and CHANGELOG outlines.
-- Adjusted code comments to explain rationale and added small TODOs.
+## 0.1.1, Humanized docs and comments
+- Rewrote the README for clarity and tone.
+- Added outlines for CONTRIBUTING and CHANGELOG.
+- Changed code comments to explain the reasoning and included small TODOs.
 
-## 0.1.0 — Initial prototype
-- CSV input, simple scoring rules, console UI.
+## 0.1.0, Initial prototype
+- Included CSV input, simple scoring rules, and a console UI.
