@@ -1,7 +1,7 @@
 # Project Report - Health & Diet Analyzer for Hostel Students (Java)
 
 ## Introduction
-This Java console application lets students log their meals, calculate daily nutrition totals, and identify possible deficiencies using simple rules.
+This Java console application allows students to log their meals, calculate daily nutrition totals, and spot possible deficiencies using simple rules.
 
 ## Architecture
 - `Main` - console interface
