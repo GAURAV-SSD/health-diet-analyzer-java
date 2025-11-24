@@ -25,9 +25,7 @@ This is a Java console application skeleton for the course project "Health & Die
    ```
 4. The app shows a console menu to add meals and view today's summary.
 
-## Notes
-- This is a single-user console demo. Data is persisted to `data/db.json`.
-- For submission, include this project ZIP on GitHub and add diagrams/report as required by the course.
+
 
 
 ## Maven usage (recommended)
