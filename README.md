@@ -1,4 +1,4 @@
-# Health & Diet Analyzer — Java (Humanized)
+# Health & Diet Analyzer — Java
 
 A small console Java app that helps hostel students (or anyone) get a quick sense of their daily diet quality and simple suggestions to improve it. I started this as a course project and kept the code intentionally simple so it's easy to read and extend.
 
@@ -11,7 +11,7 @@ Quick summary
 - Output: daily nutrient totals, a simple score, and plain-language suggestions.
 - Not medical advice — meant for prototyping and learning.
 
-What’s new in this “humanized” version
+What’s new in this version
 - Friendlier README and usage examples.
 - Short explanations of the scoring rationale instead of dry statements.
 - Comments in code focus on why decisions were made, not just what the code does.
