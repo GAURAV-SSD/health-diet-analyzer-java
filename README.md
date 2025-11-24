@@ -1,12 +1,18 @@
-# Health & Diet Analyzer for Hostel Students (Java)
+# Statement
+
+**Project:** Health & Diet Analyzer for Hostel Students (Java)
+
+**Problem Statement:** Hostel students need a simple way to check diet quality and find possible deficiencies.
+
+**Scope:** Single-user console app with optional scaling to multi-user and GUI.
 
 **Student:** GAURAV BHARDWAJ  
 **Reg:** 24BSA10187
 
-This is a Java console application skeleton for the course project "Health & Diet Analyzer for Hostel Students."
+This is a Java console application for the course project "Health & Diet Analyzer for Hostel Students."
 
 ## What is included
-- A simple Maven-like Java project structure under `src/`
+- A simple Java project structure under `src/`
 - Core Java classes for Users, FoodItems, Meals, Nutrition aggregation, and a basic JSON-based datastore
 - Sample data files in `data/`
 - `pom.xml` for reference (no external dependencies)
@@ -23,12 +29,12 @@ This is a Java console application skeleton for the course project "Health & Die
    ```
    java -cp out com.healthdiet.Main
    ```
-4. The app displays a console menu to add meals and view today's summary.
+4. The app shows a console menu to add meals and view today's summary.
 
 ## Maven usage (recommended)
 This project is set up as a Maven project. To build and run:
 
-1. Make sure Maven and Java 17 or newer are installed.
+1. Ensure Maven and Java 17 or newer are installed.
 2. From the project root:
    - `mvn clean compile`
    - `mvn exec:java -Dexec.mainClass=com.healthdiet.Main`
@@ -37,3 +43,7 @@ To run tests:
    - `mvn test`
 
 You can also run `./run.sh` (Unix) or `run.bat` (Windows) to compile and execute.
+
+**Target Users:** Undergraduate students living in hostels, especially vegetarians.
+
+**High-level Features:** Meal logging, nutrient aggregation, deficiency detection, dashboard (console), recommendations.
